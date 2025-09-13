@@ -16,12 +16,12 @@ def setup_logger(name: str, log_file: str = "app.log", level=logging.INFO):
         # File handler logs everything at 'level' (default INFO)
         file_handler = logging.FileHandler(log_path)
         file_handler.setLevel(level)
-        file_handler.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
+        file_handler.setFormatter(logging.Formatter("%(asctime)s - %(filename)s - %(levelname)s - %(message)s"))
         
         # Console handler logs only errors and above
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.ERROR)
-        console_handler.setFormatter(logging.Formatter("%(name)s - %(levelname)s - %(message)s"))
+        console_handler.setFormatter(logging.Formatter("%(filename)s - %(levelname)s - %(message)s"))
         
         # Add handlers
         logger.addHandler(file_handler)
