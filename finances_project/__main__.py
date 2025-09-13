@@ -1,33 +1,30 @@
 import pandas as pd
 from config import connect
 from logger import setup_logger
-from constants import file_name, csv_file
+from constants import file_name, csv_file, sheet_name
 
 log = setup_logger(__file__)
 
 
-def sum_amount_by_business(df):
-    """Sum Description for each unique instance of Amount."""
-    return df.groupby("Amount")["Description"].sum().reset_index()
-
-
 if __name__ == "__main__":
-    """Connect to file_name and open up sheet_name"""
-    log.info(f"Connecting to {file_name}")
+    """
+    Connect to google sheet and write to test tab
+    """
     conn = connect(file_name)
-    log.info("Successfully connected!")
 
-    # worksht = conn.worksheet("title", sheet_name) # Expenses 2024
-    worksht = conn.worksheet("title", "test")
+    sheet = conn.worksheet("title", sheet_name) # Expenses 2024
+    sheet.clear() # clear from last run
 
     # Create dataframe
-    log.info(csv_file)
-    print(csv_file)
-    df = pd.read_csv(csv_file, header=0)  # Assumes first row contains column names
-    print(df.head())
+    log.info(f"Reading from csv {csv_file}")
+    df = pd.read_csv(csv_file, header=0)  # assumes first row contains column names
 
-    # Manipulate dataframe
-    summed_df = sum_amount_by_business(df)
-    print(summed_df)
+    df = df[df["Amount"] <= 0] # remove positive amounts (payments)
 
-    worksht.set_dataframe(summed_df, (1, 1))
+    # Clean up/group data
+    summed_df = df.groupby("Amount")["Description"].sum().reset_index() # sum and group by amount
+    # df = df.groupby("Amount").sum().reset_index()
+
+    # Write df to google sheet
+    sheet.set_dataframe(df, (1, 1), copy_index=False, copy_head=True)
+    log.info(f"Data written to {sheet_name} tab")

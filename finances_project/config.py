@@ -1,18 +1,19 @@
 import pygsheets
 from logger import setup_logger
 
-logger = setup_logger(__file__)
+log = setup_logger(__file__)
 
 def connect(file_name):
     try:
-        # Create the Client 
+        # Create the Client
+        log.info(f"Connecting to {file_name}")
         client = pygsheets.authorize(service_account_file="finances-442404-201151fbc89c.json") 
     except Exception as e:
-        logger.error(f"Unable to establish connection due to: {e}")  
+        log.error(f"Unable to establish connection due to: {e}")  
     finally:
         # opens a spreadsheet by its name/title 
         spreadsht = client.open(file_name)
         title = client.spreadsheet_titles()
-        logger.info(f"Connected to google sheet {title}") 
+        log.info(f"Successfully connected to google sheet {title}!") 
     
         return spreadsht
