@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "finances-442404",
+  "private_key_id": "201151fbc89cbd138b63ba9fda232a62754d07ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDiB7V8KVxnTbKO\n6vIR6G/czgxIVPhew5JeNDu6wBKyHNlMTY6S8YedVnq2SimOBbbhR9rNkqIiC3Hq\nSfk9g3fGdxMrAWjBHZ4qeJdTIWakSoDe0JvOcLU58PrlPDjIhQbHdfX9W72ejC42\n3QL6igCgEqdh1XitY+cmodezOR+EWt1LoviTwoVjX8MzJxkQqdu/X3JMiU+8ymfy\nLEA3KQKytEtGn8RrBxVhh1w9upJncqAl4IlNo0+kC+PJzVM8jNyJ14JFInY7nrPI\nPSRahYJhYrUaO4fc58W4zwc5dFvzGydsZHqqh1otXtoOdfbhneUXsU02+J2uIoV5\njoxU022lAgMBAAECggEAIHn8FR16ReuPiuJuKq2LmR3P/Pqcfz05hCicJm6foRDt\nFf4UzL9AfZZl5lhMlTfz+XWSFjSJ8DtVwFSlp7WCmbUVP3oh25GOXsrZ71tevJ9p\n2dn+cRCXsX4TBqn6/LDEcxdbY25xldzNbRufaHE4usdDXpbGEp/GoDHj5MAB68m/\nXSkgl+q5m6KFcvB92gJ9Em9aaLne92NWM1GmCOjeYbLoe+xM7QbaYdJcjqO8N2jZ\n+4311idQYpWqkhiF4ibg4l2Z/u/7oSeEZqr8V5IPcqbdfBbvqC76DmB9rnCL5K1p\nuQpqF1cw/LJRAWqjyjz1Qa3Hjc8dl8huJ8uDjxYbRwKBgQDz8e69/tYsDeUtpILB\nnf362rC0QACC5D5GmBFF7ABFNq/ujaw6Hcmnid0mK9G8V9IgJRCgMFl9UHpefRqy\nFhZR0nzqrbDxFfKq8hYgKnQti6qMrHbLOe5V6OhZi5CbTPUD2t2iBdowngLlHRJR\n4KIKdgj3kjOtyz5S1XDKg7mJHwKBgQDtMyP1LIFpL/VNDWZZT2bIQD+HAhLY2u55\ncey5YnlacV2fnnbQQb8D4QYhpysGcuHi0/hJBk/UJpLcuUOIfMy4tXb99eqeqGS5\nKXfM3LCdlGVNzDBR7VNH8oWGyoY1fV/wlO9VU47vkxpIYo/bhAdanvcSykEuY/G5\nhReQBbc8uwKBgAmdVHKKk7hix9CXtkuZRYRYkDRafWqrQkUYAz5FQfF4aVC2pr4X\npHYE+gFiIr8QmwiHTXNy1GQbAueseJviQPjymdfKBrpJyimwpuyXn8KXyZ4Hwhra\naqlaJ6Y32Pg1/UYsnyWeo23dHHIZRjqR5vEQm+PeEEleRFORdAOXU32zAoGAINEB\neYsVwGLFMkrXTSXiF3RkFZ6g0uW/Nogfcyp/lZa3mDzJPVjLP5MjUQaaukKso8Al\nypyX8McBbI4pHLn/bNKWSt55/kdX4BIvo+UofjSoq1HDoaIO8pZICPT+Cmp1GojQ\nb+KmlNiqOzd/paQnjE8P6caXq/5h1APo1aEkz78CgYAvxXUPK5kc41LOFNXx6iBQ\nciezJ5Ky03iPu3oFyLAA9Z2B1yvUxpkUiagraRx16LbQ5v9oH62Uft9JCcFK7lCA\nCW79IIJx1IIwOd8RjW8diZACNsbeFTLHylsn7LljKDAxxeWPVmYcVJb25JlcP6av\nrwHlS5h5BYZJNpytOlcCOg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "chardonnate@finances-442404.iam.gserviceaccount.com",
+  "client_id": "105359597585888403809",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chardonnate%40finances-442404.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
